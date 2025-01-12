@@ -109,15 +109,15 @@ const styles = StyleSheet.create({
   },
 });
 
-const PDFFile = () =>
-  // numar,
-  // prestator,
-  // resedinta,
-  // codPostal,
-  // telefon,
-  // cui,
-  // suma,
-  // text_semnatura_prestator,
+const PDFFile = ({  numar,
+  prestator,
+  resedinta,
+  codPostal,
+  telefon,
+  cui,
+  suma,
+  text_semnatura_prestator,}) =>
+
   {
     const getCurrentDate = () => {
       const today = new Date();
@@ -127,14 +127,6 @@ const PDFFile = () =>
       return `${day}.${month}.${year}`;
     };
 
-    const numar = "54";
-    const prestator = "Vasile Aurel";
-    const resedinta = "Cuca Macaii";
-    const codPostal = "345263";
-    const telefon = "072843235";
-    const cui = "42117031";
-    const suma = "1200 Euro";
-    const text_semnatura_prestator = "semnatura prestatorului";
     console.log({
       // numar,
       // prestator,
